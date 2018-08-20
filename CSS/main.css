@@ -1,0 +1,27 @@
+.mainHeader{
+    margin-top: 70px;
+}
+
+.main{
+    margin-top: 10px;
+}
+
+html{
+    font-size: 90%;
+}
+
+body{
+    background-color: #eee;
+    font-size: 100%;
+
+}
+
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*text-align: center; */
+}
+
+table.header{
+    background-color: #7b41a8;
+    color: white;
+}
