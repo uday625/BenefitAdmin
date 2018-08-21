@@ -24,7 +24,7 @@
     </nav>
 
  <form>
-<div class="mainHeader container">
+<div class="mainHeader container rowfontsize">
     <div class="row">
 
         <div class="col-12">
@@ -126,34 +126,95 @@
                         <div class="card">
                                 <div class="card-body">
                                 <div class="col-12">
-                                    <table class="table table-hover small-text header" id="heading">
-                                            <tr class="tr-header">
+                                    <table class="table table-hover small-text" id="heading">
+                                        <tr class="tr-header header">
                                                 <th>Benefit Description</th>
                                                 <th>Network1 </th>
-                                                <th>Network2</th>         
-                                            <tr>
+                                                <th>Network2</th>  
+                                                <th></th>      
+                                        </tr>
+                                        <tr>
+                                                <td style="width:10%"></td>
+                                                <td style="width:40%">    
+
+                                                        <label for="limitPrefix" class="display-inline">Limit</label>
+                                                        <div class="col-sm-4 display-inline">
+
+                                                                <select name="limitPrefix[]" class="form-control">
+                                                                                <option value="LM01" selected>LM01-No Limit</option>
+                                                                                <option value="LM02">LM02 - 20 visit/year</option>
+                                                                                <option value="LM03">LM03 - Plan Default</option>
+                                                                </select> 
+                                                        </div>            
+                                                                                                        
+                                                        <label for="dedePrefix" class="display-inline">DEDE</label>
+                                                        <div class="col-sm-4 display-inline">
+                                                                <select name="dedePrefix[]" class="form-control">
+                                                                                <option value="DE01" selected>DE01-No Deductible</option>
+                                                                                <option value="DE02">DE02 - $200/year</option>
+                                                                                <option value="DE03">DE03 - Plan Default</option>
+                                                                </select>
+                                                        </div>  
+
+                                                </td>
+                                                <td style="width:40%"> 
+
+                                                        <label for="limitPrefix" class="display-inline">Limit</label>
+                                                        <div class="col-sm-4 display-inline">
+
+                                                                <select name="limitPrefix[]" class="form-control">
+                                                                                <option value="LM01" selected>LM01-No Limit</option>
+                                                                                <option value="LM02">LM02 - 20 visit/year</option>
+                                                                                <option value="LM03">LM03 - Plan Default</option>
+                                                                </select> 
+                                                        </div>            
+                                                                                                        
+                                                        <label for="dedePrefix" class="display-inline">DEDE</label>
+                                                        <div class="col-sm-4 display-inline">
+                                                                <select name="dedePrefix[]" class="form-control">
+                                                                                <option value="DE01" selected>DE01-No Deductible</option>
+                                                                                <option value="DE02">DE02 - $200/year</option>
+                                                                                <option value="DE03">DE03 - Plan Default</option>
+                                                                </select>
+                                                        </div>                                                         
+                                                                                                                                                                        
+                                                </td>
+                                                <td style="width:10%"></td>
+                                        </tr>
                                     </table>
+
+
                                     <table class="table table-hover small-text" id="tb">
-                                            <tr class="tr-header">
-                                                <th>Benefit Description</th>
-                                                <th>Coverage</th>
-                                                <th>Setting</th>
-                                                <th>Copay </th>
-                                                <th>Coinsurance</th>
-                                                <th>Limit</th>
-                                                <th>Deductible </th>
-                                                <th>Remarks</th>            
-                                                <th><a href="javascript:void(0);" style="font-size:18px;" id="addMore" title="Add More Benefit"><img height="14px" width ="14px" src="svg/si-glyph-plus.svg"/></a></th>
                                             <tr>
-                                            <td>
-                                                <select name="benProfile[]" class="form-control">
+                                                <th></th>
+                                                <th class="subheaderNetwork1">Coverage</th>
+                                                <th class="subheaderNetwork1">Setting</th>
+                                                <th class="subheaderNetwork1">Auth</th>
+                                                <th class="subheaderNetwork1">Ref</th>
+                                                <th class="subheaderNetwork1">Copay </th>
+                                                <th class="subheaderNetwork1">Coins</th>
+                                                <th class="subheaderNetwork2">Coverage</th>
+                                                <th class="subheaderNetwork2">Setting</th>
+                                                <th class="subheaderNetwork2">Auth</th>
+                                                <th class="subheaderNetwork2">Ref</th>
+                                                <th class="subheaderNetwork2">Copay </th>
+                                                <th class="subheaderNetwork2">Coins</th>                                                
+                                                <th>Remarks</th>            
+                                                <th><a href="javascript:void(0);" id="addMore" title="Add More Benefit"><img height="14px" width ="14px" src="svg/si-glyph-plus.svg"/></a></th>
+                                        </tr>    
+                                        
+                                                <tr>
+                                            <td style="width:10%">
+                                                <div class="col-sm-12 display-inline">
+                                                <select name="benProfile[]" class="form-control" >
                                                         <option value="" selected>Radiology-Auth Req</option>
                                                         <option value="class1">Radiology- $5 Copay</option>
                                                         <option value="classe">Radiology- all others</option>
                                                 </select>
+                                                </div>
 
                                             </td>
-                                            <td>
+                                            <td style="width:8%">
                                                     <select name="benCoverage[]" class="form-control">
                                                             <option value="Allow" selected>Allow</option>
                                                             <option value="Deny">Deny</option>
@@ -161,40 +222,91 @@
                                         
                                             </td>
 
-                                            <td>
-                                                <select name="designation[]" class="form-control">
-                                                    <option value="PCP" selected>PCP</option>
-                                                    <option value="PAR">Network</option>
-                                                    <option value="PAR">Par</option>
-                                                    <option value="NONPAR">Non Par</option>
-                                                    <option value="ALL">All</option>
-                                                </select>
-                                            </td>
-                                            <td><input type="text" name="copay[]" class="form-control" placeholder="Enter copay $"></td>
-                                            <td><input type="text" name="coinsurance[]" class="form-control" placeholder="Enter coinsurance %"></td>
 
-                                            <td>
-                                                    <select name="limitPrefix[]" class="form-control">
-                                                            <option value="LM01" selected>LM01-No Limit</option>
-                                                            <option value="LM02">LM02 - 20 visit/year</option>
-                                                            <option value="LM03">LM03 - Plan Default</option>
-                                                    </select>
-                                        
-                                            </td>
+                                            <td style="width:8%">
+                                                        <select name="designation[]" class="form-control">
+                                                            <option value="PCP" selected>PCP</option>
+                                                            <option value="PAR">Network</option>
+                                                            <option value="PAR">Par</option>
+                                                            <option value="NONPAR">Non Par</option>
+                                                            <option value="ALL">All</option>
+                                                        </select>
+                                                    </td>                                            
 
-                                            <td>
-                                                    <select name="dedePrefix[]" class="form-control">
-                                                            <option value="DE01" selected>DE01-No Deductible</option>
-                                                            <option value="DE02">DE02 - $200/year</option>
-                                                            <option value="DE03">DE03 - Plan Default</option>
-                                                    </select>
-                                        
-                                            </td>
-                                            <td><input type="text" name="remarks[]" class="form-control" placeholder="comments"></td>
+                                                 <td style="width:6%">
+                                                        <div class="col-sm-12 display-inline">
+                                                                <select name="auth[]" class="form-control">
+                                                                        <option value="Yes" selected>Yes</option>
+                                                                        <option value="No">No</option>
+                                                                </select>
+                                                        </div>
+                                            
+                                                </td>
+                                                
+                                                <td style="width:6%">
+                                                                <select name="ref[]" class="form-control display-inline">
+                                                                        <option value="Yes" selected>Yes</option>
+                                                                        <option value="No">No</option>
+                                                                </select>
+                                                    
+                                                </td>                                                
 
-                                            <td><a href='javascript:void(0);' class='remove'> <img height="14px" width ="14px" src="svg/si-glyph-remove.svg"/></a>
-                                                                                                            
-                                            </td>
+                                            <td style="width:6%">
+                                                        <div class="col-sm-8 display-inline">    
+                                                                <input type="text" name="copay[]" class="form-control" placeholder="$"></td>
+                                                        </div>
+                                            <td style="width:6%">
+                                                        <div class="col-sm-8 display-inline">      
+                                                <input type="text" name="coinsurance[]" class="form-control" placeholder="%"></td>
+                                                        </div>
+
+                                            <td style="width:8%">
+                                                        <select name="benCoverage[]" class="form-control">
+                                                                <option value="Allow" selected>Allow</option>
+                                                                <option value="Deny">Deny</option>
+                                                        </select>
+                                            
+                                                </td>
+    
+    
+                                                <td style="width:8%">
+                                                            <select name="designation[]" class="form-control">
+                                                                <option value="PCP" selected>PCP</option>
+                                                                <option value="PAR">Network</option>
+                                                                <option value="PAR">Par</option>
+                                                                <option value="NONPAR">Non Par</option>
+                                                                <option value="ALL">All</option>
+                                                            </select>
+                                                        </td>                                            
+    
+                                                <td style="width:6%">
+                                                            <select name="auth[]" class="form-control display-inline">
+                                                                    <option value="Yes" selected>Yes</option>
+                                                                    <option value="No">No</option>
+                                                            </select>
+                                                
+                                                    </td>
+                                                    
+                                                    <td style="width:6%">
+                                                                    <select name="ref[]" class="form-control display-inline">
+                                                                            <option value="Yes" selected>Yes</option>
+                                                                            <option value="No">No</option>
+                                                                    </select>
+                                                        
+                                                    </td>                                                
+    
+                                                <td style="width:6%"><input type="text" name="copay[]" class="form-control" placeholder="$"></td>
+                                                <td style="width:6%"><input type="text" name="coinsurance[]" class="form-control" placeholder="%"></td>
+                                                <td>
+                                                                <input type="text" name="remarks[]" class="form-control" placeholder="comments">
+                                                               
+                                                        </td>
+                                                        
+                                                        <td>
+                                                                        
+                                                                        <a href='javascript:void(0);' class='remove'> <img height="14px" width ="14px" src="svg/si-glyph-remove.svg"/></a>  
+                                                                </td>                                                        
+
                                             </tr>
                                     </table>
                                 
@@ -249,6 +361,8 @@
         </script> 
   
   
+
+
   
   
   </body>

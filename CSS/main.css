@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: 70%;
+    font-size: 60%;
 }
 
 body{
@@ -16,12 +16,43 @@ body{
 
 }
 
+div.rowfontsize{
+    font-size: 80%;
+}
+
 div.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /*text-align: center; */
+    padding-right: 0;
+    padding-left: 0;
 }
 
-table.header{
+table td{
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid #7b41a8;
+}
+
+tr.header{
     background-color: #7b41a8;
     color: white;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+th.subheaderNetwork1{
+    background-color: #23a1a3;
+    color: white;
+}
+
+th.subheaderNetwork2{
+    background-color: #0a9659;
+    color: white;
+}
+
+
+.display-inline{
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
 }
