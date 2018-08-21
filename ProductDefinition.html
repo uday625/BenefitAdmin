@@ -88,10 +88,11 @@
                                                     <div class="col-sm-6">
                                                             <select class="form-control" id="modelProduct">
                                                                     <option selected>Select Benefit Profile</option>
-                                                                    <option>Radiology</option>
-                                                                    <option>Pathology</option>
-                                                                    <option>Office Visit</option>
-                                                                    <option>DME</option>
+                                                                    <option>Medicaid TANF Benefits</option>
+                                                                    <option>Medicaid Duals</option>
+                                                                    <option>Medicare Part A&B</option>
+                                                                    <option>HIX Metal Plans</option>
+                                                                    <option>OH Market A Benefits</option>
                                                             </select>
                                                     </div>            
                                             </div>
@@ -205,11 +206,12 @@
                                         
                                                 <tr>
                                             <td style="width:10%">
-                                                <div class="col-sm-12 display-inline">
+                                                <div class="display-inline">
                                                 <select name="benProfile[]" class="form-control" >
-                                                        <option value="" selected>Radiology-Auth Req</option>
-                                                        <option value="class1">Radiology- $5 Copay</option>
-                                                        <option value="classe">Radiology- all others</option>
+                                                        <option value="" selected>Cardiac Rehab Outpatient  0-26</option>
+                                                        <option value="">Durable Medical Equipment Outpatient-No Auth  </option>
+                                                        <option value="">Durable Medical Equipment Supplier, Inpatient  </option>
+                                                        <option value="">Durable Medical Equipment Supplier, Outpatient  </option>
                                                 </select>
                                                 </div>
 
@@ -234,7 +236,7 @@
                                                     </td>                                            
 
                                                  <td style="width:6%">
-                                                        <div class="col-sm-12 display-inline">
+                                                        <div class="display-inline">
                                                                 <select name="auth[]" class="form-control">
                                                                         <option value="Yes" selected>Yes</option>
                                                                         <option value="No">No</option>
@@ -252,11 +254,11 @@
                                                 </td>                                                
 
                                             <td style="width:6%">
-                                                        <div class="col-sm-8 display-inline">    
+                                                        <div class="display-inline">    
                                                                 <input type="text" name="copay[]" class="form-control" placeholder="$"></td>
                                                         </div>
                                             <td style="width:6%">
-                                                        <div class="col-sm-8 display-inline">      
+                                                        <div class="display-inline">      
                                                 <input type="text" name="coinsurance[]" class="form-control" placeholder="%"></td>
                                                         </div>
 
@@ -322,8 +324,8 @@
 </br>
 <div class="form-group row text-center">
         <div class="col-sm-12">
-            <button type="reset" class="btn btn-secondary ">Reset</button>
-            <button type="submit" class="btn btn-primary ">Submit</button>            
+            <button type="reset" class="btn btn-lg btn-secondary ">Reset</button>
+            <button type="submit" class="btn btn-lg btn-primary ">Submit</button>            
         </div>
 </div> 
 
