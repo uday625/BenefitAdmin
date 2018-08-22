@@ -24,7 +24,7 @@
     </nav>
 
  <form>
-<div class="mainHeader container rowfontsize">
+<div class="mainHeader container">
     <div class="row">
 
         <div class="col-12">
@@ -44,20 +44,19 @@
                                             </div>
                             
                                             <div class="form-group row">
-                                            <label for="modelProduct" class="col-sm-4 col-form-label text-right">Select Model Product</label>
+                                            <label for="modelProduct" class="col-sm-4 col-form-label text-right">Model Product</label>
                                             <div class="col-sm-6">
                                                     <select class="form-control" id="modelProduct">
                                                             <option selected>Select Model Product</option>
-                                                            <option>Product 1</option>
-                                                            <option>Product 2</option>
-                                                            <option>Product 3</option>
-                                                            <option>Product 4</option>
+                                                            <option>OHHIXGOLD</option>
+                                                            <option>OHHIXSLVR</option>
+                                                            <option>OHHIXBRNZ</option>
                                                     </select>
                                             </div>            
                                             </div>
                             
                                             <div class="form-group row">
-                                                    <label for="modelProduct" class="col-sm-4 col-form-label text-right">Select Date range</label>
+                                                    <label for="modelProduct" class="col-sm-4 col-form-label text-right">Date range</label>
                                                     <div class="col-sm-6">
                                                         <select class="custom-select" multiple id="productGeneration">
                                                                 <option selected>01/01/1990 - 12/31/2015</option>
@@ -67,25 +66,30 @@
                                                     </div>                
                                             </div>                
                             
+                                            
+
                                             <div class="form-group row">
-                                                    <label for="effectiveDate" class="col-sm-4 col-form-label text-right">Effective Date</label>
-                                                    <div class="col-sm-6">
+                                                <div class="col-sm-2"></div>    
+                                                <div class="col-sm-8 border border-default">    
+
+                                                                </br> 
+                                                                <div class="form-group row">
+                                                                        <label for="effectiveDate" class="col-sm-3 col-form-label text-right">Effective Date</label>
+                                                                        <div class="col-sm-9">
                                                         <input type="text" class="form-control" id="effectiveDate" placeholder="Select Eff Date">
                                                     </div>                      
                                             </div>
                                                             
-                                                
                                             <div class="form-group row">
                             
-                                                    <label for="termDate" class="col-sm-4 col-form-label text-right">Term Date</label>
-                                                    <div class="col-sm-6">
+                                                                                <label for="termDate" class="col-sm-3 col-form-label text-right">Term Date</label>
+                                                                                <div class="col-sm-9">
                                                         <input type="text" class="form-control" id="termDate" placeholder="Select Term Date">
                                                     </div>                        
                                             </div>  
-
                                             <div class="form-group row">
-                                                    <label for="modelProduct" class="col-sm-4 col-form-label text-right">Benefit Profile</label>
-                                                    <div class="col-sm-6">
+                                                                                <label for="modelProduct" class="col-sm-3 col-form-label text-right">Benefit Profile</label>
+                                                                                <div class="col-sm-9">
                                                             <select class="form-control" id="modelProduct">
                                                                     <option selected>Select Benefit Profile</option>
                                                                     <option>Medicaid TANF Benefits</option>
@@ -98,17 +102,26 @@
                                             </div>
 
                                             <div class="form-group row">
-                                                    <label for="modelProduct" class="col-sm-4 col-form-label text-right">Network Profile</label>
-                                                    <div class="col-sm-6">
+                                                                        <label for="modelProduct" class="col-sm-3 col-form-label text-right">Network Profile</label>
+                                                                        <div class="col-sm-9">
                                                             <select class="form-control" id="modelProduct">
                                                                     <option selected>Select Network Profile</option>
-                                                                    <option>HMO Network</option>
-                                                                    <option>PPO Network</option>
-                                                                    <option>POS Network</option>
-                                                                    <option>Rest Others</option>
+                                                                                        <option>PPO Network One</option>
+                                                                                        <option>PPO Network Two</option>
+                                                                                        <option>HMO Network </option>
+                                                                                        <option>POS Select</option>
                                                             </select>
                                                     </div>            
                                             </div>
+                            
+                                                </div> 
+                                                <div class="col-sm-2"></div>           
+                                              </div> 
+                                              
+                                              
+
+
+
                             
                                             </br>            
                             
@@ -122,204 +135,329 @@
 
     </div>    
 </div>
+
+
 <div class="main container">       
                     <div class="row">
+            
+                    <div class="col-12">
+                        <form>
                         <div class="card">
                                 <div class="card-body">
-                                <div class="col-12">
-                                    <table class="table table-hover small-text" id="heading">
-                                        <tr class="tr-header header">
-                                                <th>Benefit Description</th>
-                                                <th>Network1 </th>
-                                                <th>Network2</th>  
-                                                <th></th>      
-                                        </tr>
-                                        <tr>
-                                                <td style="width:10%"></td>
-                                                <td style="width:40%">    
 
-                                                        <label for="limitPrefix" class="display-inline">Limit</label>
-                                                        <div class="col-sm-4 display-inline">
-
-                                                                <select name="limitPrefix[]" class="form-control">
-                                                                                <option value="LM01" selected>LM01-No Limit</option>
-                                                                                <option value="LM02">LM02 - 20 visit/year</option>
-                                                                                <option value="LM03">LM03 - Plan Default</option>
-                                                                </select> 
-                                                        </div>            
-                                                                                                        
-                                                        <label for="dedePrefix" class="display-inline">DEDE</label>
-                                                        <div class="col-sm-4 display-inline">
-                                                                <select name="dedePrefix[]" class="form-control">
-                                                                                <option value="DE01" selected>DE01-No Deductible</option>
-                                                                                <option value="DE02">DE02 - $200/year</option>
-                                                                                <option value="DE03">DE03 - Plan Default</option>
-                                                                </select>
-                                                        </div>  
-
-                                                </td>
-                                                <td style="width:40%"> 
-
-                                                        <label for="limitPrefix" class="display-inline">Limit</label>
-                                                        <div class="col-sm-4 display-inline">
-
-                                                                <select name="limitPrefix[]" class="form-control">
-                                                                                <option value="LM01" selected>LM01-No Limit</option>
-                                                                                <option value="LM02">LM02 - 20 visit/year</option>
-                                                                                <option value="LM03">LM03 - Plan Default</option>
-                                                                </select> 
-                                                        </div>            
-                                                                                                        
-                                                        <label for="dedePrefix" class="display-inline">DEDE</label>
-                                                        <div class="col-sm-4 display-inline">
-                                                                <select name="dedePrefix[]" class="form-control">
-                                                                                <option value="DE01" selected>DE01-No Deductible</option>
-                                                                                <option value="DE02">DE02 - $200/year</option>
-                                                                                <option value="DE03">DE03 - Plan Default</option>
-                                                                </select>
-                                                        </div>                                                         
-                                                                                                                                                                        
-                                                </td>
-                                                <td style="width:10%"></td>
-                                        </tr>
-                                    </table>
-
-
-                                    <table class="table table-hover small-text" id="tb">
-                                            <tr>
-                                                <th></th>
-                                                <th class="subheaderNetwork1">Coverage</th>
-                                                <th class="subheaderNetwork1">Setting</th>
-                                                <th class="subheaderNetwork1">Auth</th>
-                                                <th class="subheaderNetwork1">Ref</th>
-                                                <th class="subheaderNetwork1">Copay </th>
-                                                <th class="subheaderNetwork1">Coins</th>
-                                                <th class="subheaderNetwork2">Coverage</th>
-                                                <th class="subheaderNetwork2">Setting</th>
-                                                <th class="subheaderNetwork2">Auth</th>
-                                                <th class="subheaderNetwork2">Ref</th>
-                                                <th class="subheaderNetwork2">Copay </th>
-                                                <th class="subheaderNetwork2">Coins</th>                                                
-                                                <th>Remarks</th>            
-                                                <th><a href="javascript:void(0);" id="addMore" title="Add More Benefit"><img height="14px" width ="14px" src="svg/si-glyph-plus.svg"/></a></th>
-                                        </tr>    
-                                        
-                                                <tr>
-                                            <td style="width:10%">
-                                                <div class="display-inline">
-                                                <select name="benProfile[]" class="form-control" >
-                                                        <option value="" selected>Cardiac Rehab Outpatient  0-26</option>
-                                                        <option value="">Durable Medical Equipment Outpatient-No Auth  </option>
-                                                        <option value="">Durable Medical Equipment Supplier, Inpatient  </option>
-                                                        <option value="">Durable Medical Equipment Supplier, Outpatient  </option>
-                                                </select>
-                                                </div>
-
-                                            </td>
-                                            <td style="width:8%">
-                                                    <select name="benCoverage[]" class="form-control">
-                                                            <option value="Allow" selected>Allow</option>
-                                                            <option value="Deny">Deny</option>
-                                                    </select>
-                                        
-                                            </td>
-
-
-                                            <td style="width:8%">
-                                                        <select name="designation[]" class="form-control">
-                                                            <option value="PCP" selected>PCP</option>
-                                                            <option value="PAR">Network</option>
-                                                            <option value="PAR">Par</option>
-                                                            <option value="NONPAR">Non Par</option>
-                                                            <option value="ALL">All</option>
-                                                        </select>
-                                                    </td>                                            
-
-                                                 <td style="width:6%">
-                                                        <div class="display-inline">
-                                                                <select name="auth[]" class="form-control">
-                                                                        <option value="Yes" selected>Yes</option>
-                                                                        <option value="No">No</option>
-                                                                </select>
-                                                        </div>
-                                            
-                                                </td>
-                                                
-                                                <td style="width:6%">
-                                                                <select name="ref[]" class="form-control display-inline">
-                                                                        <option value="Yes" selected>Yes</option>
-                                                                        <option value="No">No</option>
-                                                                </select>
-                                                    
-                                                </td>                                                
-
-                                            <td style="width:6%">
-                                                        <div class="display-inline">    
-                                                                <input type="text" name="copay[]" class="form-control" placeholder="$"></td>
-                                                        </div>
-                                            <td style="width:6%">
-                                                        <div class="display-inline">      
-                                                <input type="text" name="coinsurance[]" class="form-control" placeholder="%"></td>
-                                                        </div>
-
-                                            <td style="width:8%">
-                                                        <select name="benCoverage[]" class="form-control">
-                                                                <option value="Allow" selected>Allow</option>
-                                                                <option value="Deny">Deny</option>
-                                                        </select>
-                                            
-                                                </td>
-    
-    
-                                                <td style="width:8%">
-                                                            <select name="designation[]" class="form-control">
-                                                                <option value="PCP" selected>PCP</option>
-                                                                <option value="PAR">Network</option>
-                                                                <option value="PAR">Par</option>
-                                                                <option value="NONPAR">Non Par</option>
-                                                                <option value="ALL">All</option>
-                                                            </select>
-                                                        </td>                                            
-    
-                                                <td style="width:6%">
-                                                            <select name="auth[]" class="form-control display-inline">
-                                                                    <option value="Yes" selected>Yes</option>
-                                                                    <option value="No">No</option>
-                                                            </select>
-                                                
-                                                    </td>
-                                                    
-                                                    <td style="width:6%">
-                                                                    <select name="ref[]" class="form-control display-inline">
-                                                                            <option value="Yes" selected>Yes</option>
-                                                                            <option value="No">No</option>
-                                                                    </select>
-                                                        
-                                                    </td>                                                
-    
-                                                <td style="width:6%"><input type="text" name="copay[]" class="form-control" placeholder="$"></td>
-                                                <td style="width:6%"><input type="text" name="coinsurance[]" class="form-control" placeholder="%"></td>
-                                                <td>
-                                                                <input type="text" name="remarks[]" class="form-control" placeholder="comments">
-                                                               
-                                                        </td>
-                                                        
-                                                        <td>
+                                                        <h3 class="card-title" style="width:60%; margin-left: 25%; margin-right: 10%">Benefit Map Version</h3>
+                                                        <table class="table small-text benefitversion" id="heading" style="width:60%; margin-left: 25%; margin-right: 10%; text-align: center">
                                                                         
-                                                                        <a href='javascript:void(0);' class='remove'> <img height="14px" width ="14px" src="svg/si-glyph-remove.svg"/></a>  
+                                                                        <tr class="tr-header header">
+                                                                                <th>Version</th>
+                                                                                <th>Change Date</th>
+                                                                                <th>Change Reason</th>  
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <td style="width:10%"> 1 </td>
+                                                                                <td style="width:40%">                                    
+                                                                                        <label for="limitPrefix" class="display-inline">01/01/2016</label>                                
+                                                                                </td>
+                                                                                <td style="width:40%">                                 
+                                                                                        <label for="limitPrefix" class="display-inline">Initial</label>                                                                                                                                                                                                                                                               
+                                                                                </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                                <td style="width:10%"> 2 </td>
+                                                                                <td style="width:40%">                                    
+                                                                                        <label for="limitPrefix" class="display-inline">01/01/2017</label>                                
+                                                                                </td>
+                                                                                <td style="width:40%">                                 
+                                                                                        <label for="limitPrefix" class="display-inline">Changed during OE renewal</label>                                                                                                                                                                                                                                                               
+                                                                                </td>
+                                                                        </tr>
+
+                                                        </table>                                                                                              
+                                        </div>               
+                                
+                                </div>  
+                     
+                        </form>
+                    </div>
+            
+                </div>    
+</div>
+
+
+
+<div class="main container">       
+        <div class="row">
+                <div class="card">
+                        <div class="card-body">
+                        <div class="col-12">
+                                <table class="table small-text" id="heading">
+                                <tr class="tr-header" style=" text-align: center">
+                                        <td class="subheaderNetwork1">Network1 </td>
+                                        <td class="subheaderNetwork2">Network2</td>      
+                                </tr>
+                                <tr>
+                                        <!-- td style="width:10%"></td> -->
+                                        <td style="width:40%; text-align: center" class="subheaderNetwork1border">    
+
+                                                <label for="limitPrefix" class="display-inline">Limit</label>
+                                                <div class="col-sm-4 display-inline">
+
+                                                        <select name="limitPrefix[]" class="form-control">
+                                                                        <option value="LM01" selected>LM01-No Limit</option>
+                                                                        <option value="LM02">LM02 - 20 visit/year</option>
+                                                                        <option value="LM03">LM03 - Plan Default</option>
+                                                        </select> 
+                                                </div>            
+                                                                                                
+                                                <label for="dedePrefix" class="display-inline">DEDE</label>
+                                                <div class="col-sm-4 display-inline">
+                                                        <select name="dedePrefix[]" class="form-control">
+                                                                        <option value="DE01" selected>DE01-No Deductible</option>
+                                                                        <option value="DE02">DE02 - $200/year</option>
+                                                                        <option value="DE03">DE03 - Plan Default</option>
+                                                        </select>
+                                                </div>  
+
+                                        </td>
+                                        <td style="width:40%; text-align: center" class="subheaderNetwork2border"> 
+
+                                                <label for="limitPrefix" class="display-inline">Limit</label>
+                                                <div class="col-sm-4 display-inline">
+
+                                                        <select name="limitPrefix[]" class="form-control">
+                                                                        <option value="LM01" selected>LM01-No Limit</option>
+                                                                        <option value="LM02">LM02 - 20 visit/year</option>
+                                                                        <option value="LM03">LM03 - Plan Default</option>
+                                                        </select> 
+                                                </div>            
+                                                                                                
+                                                <label for="dedePrefix" class="display-inline">DEDE</label>
+                                                <div class="col-sm-4 display-inline">
+                                                        <select name="dedePrefix[]" class="form-control">
+                                                                        <option value="DE01" selected>DE01-No Deductible</option>
+                                                                        <option value="DE02">DE02 - $200/year</option>
+                                                                        <option value="DE03">DE03 - Plan Default</option>
+                                                        </select>
+                                                </div>                                                         
+                                                                                                                                                                
+                                        </td>
+                                </tr>
+                                </table>
+                        </br>                                
+                                        <div class="scrolling outer">
+                                                <div class="inner">
+                                                        <table class="ttable table-striped table-hover table-condensed" id="tb">
+                                                                <tr>
+                                                                        <th class="benefitdesc">Benefit Desc</th>                                                                        
+                                                                        <td class="subheaderNetwork1">Setting Criteria</td>
+                                                                        <td class="subheaderNetwork1">Tier</td>
+                                                                        <td class="subheaderNetwork1">Coverage</td>
+                                                                        <td class="subheaderNetwork1">Copay </td>
+                                                                        <td class="subheaderNetwork1">Coins</td>
+                                                                        <td class="subheaderNetwork1">Penality</td>
+                                                                        <td class="subheaderNetwork1">Accumulator</td>
+                                                                        <td class="subheaderNetwork1">Limits</td>
+                                                                        <td class="subheaderNetwork1">Dedeuctible</td>
+                                                                        <td class="subheaderNetwork1">HRA</td>
+                                                                        <td class="subheaderNetwork1">FSA</td>
+        
+                                                                        <td class="subheaderNetwork2">Setting Criteria</td>
+                                                                        <td class="subheaderNetwork2">Tier</td>
+                                                                        <td class="subheaderNetwork2">Coverage</td>
+                                                                        <td class="subheaderNetwork2">Copay </td>
+                                                                        <td class="subheaderNetwork2">Coins</td>
+                                                                        <td class="subheaderNetwork2">Penality</td>
+                                                                        <td class="subheaderNetwork2">Accumulator</td>
+                                                                        <td class="subheaderNetwork2">Limits</td>
+                                                                        <td class="subheaderNetwork2">Dedeuctible</td>
+                                                                        <td class="subheaderNetwork2">HRA</td>
+                                                                        <td class="subheaderNetwork2">FSA</td>
+
+                                                                        <td><a href="javascript:void(0);" id="addMore" title="Add More Benefit"><img height="14px" width ="14px" src="svg/si-glyph-plus.svg"/></a></td>
+                                                                </tr>    
+                                                        
+                                                                <tr>
+                                                                <th class="benefitdescborder">
+                                                                <div>
+                                                                <select name="benProfile[]" class="form-control" >
+                                                                        <option value="" selected>Cardiac Rehab Outpatient  0-26</option>
+                                                                        <option value="" selected>Durable Medical Equipment Outpatient-No Auth Under $1500   </option>                                                                        
+                                                                        <option value="">Durable Medical Equipment Supplier, Inpatient  </option>
+                                                                        <option value="">Durable Medical Equipment Supplier, Outpatient  </option>
+                                                                        <option value="">Non Covered Services </option>
+                                                                </select>
+                                                                </div>
+
+                                                                </th>
+
+                                                                <td class="subheaderNetwork1border">
+                                                                                <select name="designation[]" class="form-control" style="width:120px">
+                                                                                        <option value="PCP" selected>InNetwork + Auth</option>
+                                                                                        <option value="PAR">InNetwork+ Auth Violation</option>
+                                                                                        <option value="PAR">Out of Network</option>
+                                                                                        <option value="NONPAR">Out of Network + Auth</option>
+                                                                                        <option value="ALL">Out of Network + Auth Violation</option>
+                                                                                        <option value="ALL">All Other</option>
+                                                                                        <option value="ALL">All</option>
+                                                                                        <option value="ALL">PCP + Auth</option>
+                                                                                        <option value="ALL">PCP + Auth Violation</option>
+                                                                                        <option value="ALL">Par +Auth</option>
+                                                                                        <option value="ALL">Out of Network + Referral</option>        
+                                                                                </select>
+                                                                </td>  
+
+                                                                <td class="subheaderNetwork1border">
+                                                                                <select name="tier[]" class="form-control">
+                                                                                        <option value="1" selected>1</option>
+                                                                                        <option value="2">2</option>
+                                                                                        <option value="3">3</option>
+                                                                                </select>
+                                                                
+                                                                </td>
+
+                                                                <td class="subheaderNetwork1border">
+                                                                        <select name="benCoverage[]" class="form-control">
+                                                                                <option value="Allow" selected>Allow</option>
+                                                                                <option value="Deny">Disallow</option>
+                                                                        </select>
+                                                        
+                                                                </td>
+
+                                                                <td class="subheaderNetwork1border"><input type="text" name="copay[]" class="form-control" placeholder="$"></td>
+                                                                <td class="subheaderNetwork1border"><input type="text" name="coinsurance[]" class="form-control" placeholder="%"></td>                                                                
+                                          
+                                                                <td class="subheaderNetwork1border"><input type="text" name="penalty[]" class="form-control" placeholder=""></td>
+                                                                <td class="subheaderNetwork1border"><input type="text" name="accumulator[]" class="form-control" placeholder=""></td>                                                                  
+
+
+                                                                <td class="subheaderNetwork1border">
+                                                                                <select name="limitPrefix[]" class="form-control">
+                                                                                                <option value="LM01" selected>LM01-No Limit</option>
+                                                                                                <option value="LM02">LM02 - 20 visit/year</option>
+                                                                                                <option value="LM03">LM03 - Plan Default</option>
+                                                                                </select> 
+                                                                </td>
+                                                                <td class="subheaderNetwork1border">
+                                                                                <select name="dedePrefix[]" class="form-control">
+                                                                                                <option value="DE01" selected>DE01-No Deductible</option>
+                                                                                                <option value="DE02">DE02 - $200/year</option>
+                                                                                                <option value="DE03">DE03 - Plan Default</option>
+                                                                                </select>
+                                                                </td> 
+
+                                                                <td class="subheaderNetwork1border">
+                                                                                <select name="hra[]" class="form-control">
+                                                                                                <option value="" selected>All</option>
+                                                                                                <option value="">Excell</option>
+                                                                                                <option value="">No</option>
+                                                                                </select>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td class="subheaderNetwork1border">
+                                                                                <select name="fsa[]" class="form-control">
+                                                                                        <option value="Yes" selected>Yes</option>
+                                                                                        <option value="No">No</option>
+                                                                                </select>
+                                                                        
+                                                                </td>                                                
+
+  
+
+
+
+                                                                <td class="subheaderNetwork2border">
+                                                                                <select name="designation[]" class="form-control" style="width:120px">
+                                                                                        <option value="PCP" selected>InNetwork + Auth</option>
+                                                                                        <option value="PAR">InNetwork+ Auth Violation</option>
+                                                                                        <option value="PAR">Out of Network</option>
+                                                                                        <option value="NONPAR">Out of Network + Auth</option>
+                                                                                        <option value="ALL">Out of Network + Auth Violation</option>
+                                                                                        <option value="ALL">All Other</option>
+                                                                                        <option value="ALL">All</option>
+                                                                                        <option value="ALL">PCP + Auth</option>
+                                                                                        <option value="ALL">PCP + Auth Violation</option>
+                                                                                        <option value="ALL">Par +Auth</option>
+                                                                                        <option value="ALL">Out of Network + Referral</option>        
+                                                                                </select>
+                                                                </td>  
+
+                                                                <td class="subheaderNetwork2border">
+                                                                                <select name="tier[]" class="form-control">
+                                                                                        <option value="1" selected>1</option>
+                                                                                        <option value="2">2</option>
+                                                                                        <option value="3">3</option>
+                                                                                </select>
+                                                                
+                                                                </td>
+
+                                                                <td class="subheaderNetwork2border">
+                                                                        <select name="benCoverage[]" class="form-control">
+                                                                                <option value="Allow" selected>Allow</option>
+                                                                                <option value="Deny">Disallow</option>
+                                                                        </select>
+                                                        
+                                                                </td>
+
+                                                                <td class="subheaderNetwork2border"><input type="text" name="copay[]" class="form-control" placeholder="$"></td>
+                                                                <td class="subheaderNetwork2border"><input type="text" name="coinsurance[]" class="form-control" placeholder="%"></td>                                                                
+                                          
+                                                                <td class="subheaderNetwork2border"><input type="text" name="penalty[]" class="form-control" placeholder=""></td>
+                                                                <td class="subheaderNetwork2border"><input type="text" name="accumulator[]" class="form-control" placeholder=""></td>                                                                  
+
+
+                                                                <td class="subheaderNetwork2border">
+                                                                                <select name="limitPrefix[]" class="form-control">
+                                                                                                <option value="LM01" selected>LM01-No Limit</option>
+                                                                                                <option value="LM02">LM02 - 20 visit/year</option>
+                                                                                                <option value="LM03">LM03 - Plan Default</option>
+                                                                                </select> 
+                                                                </td>
+                                                                <td class="subheaderNetwork2border">
+                                                                                <select name="dedePrefix[]" class="form-control">
+                                                                                                <option value="DE01" selected>DE01-No Deductible</option>
+                                                                                                <option value="DE02">DE02 - $200/year</option>
+                                                                                                <option value="DE03">DE03 - Plan Default</option>
+                                                                                </select>
+                                                                </td> 
+
+                                                                <td class="subheaderNetwork2border"> 
+                                                                                <select name="hra[]" class="form-control">
+                                                                                                <option value="" selected>All</option>
+                                                                                                <option value="">Excell</option>
+                                                                                                <option value="">No</option>
+                                                                                </select>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td class="subheaderNetwork2border">
+                                                                                <select name="fsa[]" class="form-control">
+                                                                                        <option value="Yes" selected>Yes</option>
+                                                                                        <option value="No">No</option>
+                                                                                </select>
+                                                                        
+                                                                </td>                                                
+
+  
+
+
+
+                                                                        
+                                                                <td>
+                                                                                
+                                                                                <a href='javascript:void(0);' class='remove'> <img height="14px" width ="14px" src="svg/si-glyph-remove.svg"/></a>  
                                                                 </td>                                                        
 
-                                            </tr>
-                                    </table>
-                                
-                                
-                                
-                                
-                                </div>
-                            </div>
+                                                                </tr>
+                                                        </table>
+                                                </div>
+                                        </div>
                         </div>
-                    </div>    
+                        </div>
+                </div>
 
+        </div>
 </div>
 </br>
 <div class="form-group row text-center">
@@ -329,7 +467,9 @@
         </div>
 </div> 
 
-</form>
+</br>
+
+
 
 
 
@@ -345,6 +485,7 @@
    
   
   
+
         <script>
             $(function(){
             $('#addMore').on('click', function() {
@@ -365,7 +506,6 @@
   
 
 
-  
   
   </body>
 </html>

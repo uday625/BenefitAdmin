@@ -7,17 +7,13 @@
 }
 
 html{
-    font-size: 60%;
+    font-size: 70%;
 }
 
 body{
     background-color: #eee;
     font-size: 100%;
 
-}
-
-div.rowfontsize{
-    font-size: 80%;
 }
 
 div.card {
@@ -27,11 +23,14 @@ div.card {
     padding-left: 0;
 }
 
-table td{
+
+table.benefitversion td{
     padding-right: 0;
     padding-left: 0;
     border: 1px solid #7b41a8;
 }
+
+
 
 tr.header{
     background-color: #7b41a8;
@@ -40,14 +39,44 @@ tr.header{
     text-align: center;
 }
 
-th.subheaderNetwork1{
-    background-color: #23a1a3;
+
+th.benefitdesc{
+    background-color: #0895c9;
     color: white;
+    border: 1px solid #0895c9;
+    
 }
 
-th.subheaderNetwork2{
+th.benefitdescborder{
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid #0895c9;
+    border-right: 1px solid #0895c9;
+}
+
+td.subheaderNetwork1{
+    background-color: #23a1a3;
+    color: white;
+    border: 1px solid #23a1a3;
+}
+
+td.subheaderNetwork1border{
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid #23a1a3;
+}
+
+
+td.subheaderNetwork2{
     background-color: #0a9659;
     color: white;
+    border: 1px solid #0a9659;
+}
+
+td.subheaderNetwork2border{
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid #0a9659;
 }
 
 
@@ -55,4 +84,32 @@ th.subheaderNetwork2{
     display: inline-block;
     padding-right: 0;
     padding-left: 0;
+}
+
+
+
+/* additing scroll to the grid */
+
+.scrolling table {
+    table-layout: inherit;
+ *margin-left: -100px;/*ie7*/
+}
+.scrolling td , th {
+    vertical-align: top;
+	padding: 10px;
+	min-width: 100px;
+}
+.scrolling th {
+	position: absolute;
+    *position: relative; /*ie7*/
+	left: 0;
+	width: 150px;
+}
+.outer {
+	position: relative
+}
+.inner {
+	overflow-x: auto;
+	overflow-y: visible;
+	margin-left: 150px;
 }
